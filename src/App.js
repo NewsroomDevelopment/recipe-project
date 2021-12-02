@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
+import styled from 'styled-components';
 import './App.css';
+import { device } from './device';
+import WebsiteVersion from './img/WebsiteVersion-01.png';
+import WebsiteVersion2 from './img/WebsiteVersion-02.png';
+import Recipe from "./components/Recipe";
+import Button from "./components/Button"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+
+const MainImage = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-image: url(${(props) => props.url});
+  background-size: cover;
+
+  @media ${device.tablet} {
+    display: block;
+    width: 60%;
+    height: 35rem;
+  }
+`;
 
 function App() {
+  const [url, setUrl] = useState(null)
+  console.log(url)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainImage url={WebsiteVersion} />
+      <Button setUrl={setUrl} />
+      <Recipe url={url} />
+      {/* <recipeImage imgLink={Recipe.imgLink} /> */}
+      <Router>
+        <Routes>
+          <Route exact path='/recipe' element={() => <Recipe url={url}/>}></Route>
+       </Routes>
+      </Router>
     </div>
   );
 }
