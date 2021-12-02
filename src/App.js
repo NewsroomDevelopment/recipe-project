@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import './App.css';
 import { device } from './device';
 import WebsiteVersion from './img/WebsiteVersion-01.png';
-import WebsiteVersion2 from './img/WebsiteVersion-02.png';
 import Recipe from "./components/Recipe";
 import Button from "./components/Button"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -12,7 +11,7 @@ import { Buttons } from './data/Buttons';
 
 const MainImage = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   background-image: url(${(props) => props.url});
   background-size: cover;
 
@@ -29,13 +28,11 @@ function App() {
   return (
     <div className="App">
       <MainImage url={WebsiteVersion} />
-      <Recipe url={url} />
       {
         Buttons.map(button => (
           <Button setUrl={setUrl} name={button.name} position={button.position} rotation={button.rotation} url={button.url}/> 
         ))
       }
-      {/* <recipeImage imgLink={Recipe.imgLink} /> */}
       <Router>
         <Routes>
           <Route exact path='/recipe' element={() => <Recipe url={url}/>}></Route>
