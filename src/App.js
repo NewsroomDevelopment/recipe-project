@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import './App.css';
 import { device } from './device';
 import WebsiteVersion from './img/WebsiteVersion-01.png';
-import WebsiteVersion2 from './img/WebsiteVersion-02.png';
+import MobileVersion from './img/Mobileversion-06.png';
 import Recipe from "./components/Recipe";
 import Button from "./components/Button"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -13,8 +13,12 @@ import { Buttons } from './data/Buttons';
 const MainImage = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: url(${(props) => props.url});
+  background-image: url(${WebsiteVersion});
   background-size: cover;
+
+  @media ${device.mobile} {
+    background-image: url(${MobileVersion});
+  }
 `;
 
 function App() {
@@ -22,7 +26,7 @@ function App() {
   console.log(url)
   return (
     <div className="App">
-      <MainImage url={WebsiteVersion} />
+      <MainImage/>
       <Recipe url={url} />
       {
         Buttons.map(button => (
