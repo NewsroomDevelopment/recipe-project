@@ -7,6 +7,7 @@ import WebsiteVersion2 from './img/WebsiteVersion-02.png';
 import Recipe from "./components/Recipe";
 import Button from "./components/Button"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Buttons } from './data/Buttons';
 
 
 const MainImage = styled.div`
@@ -28,8 +29,12 @@ function App() {
   return (
     <div className="App">
       <MainImage url={WebsiteVersion} />
-      <Button setUrl={setUrl} />
       <Recipe url={url} />
+      {
+        Buttons.map(button => (
+          <Button setUrl={setUrl} name={button.name} position={button.position} rotation={button.rotation} url={button.url}/> 
+        ))
+      }
       {/* <recipeImage imgLink={Recipe.imgLink} /> */}
       <Router>
         <Routes>
