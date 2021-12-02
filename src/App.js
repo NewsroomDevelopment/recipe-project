@@ -15,12 +15,6 @@ const MainImage = styled.div`
   height: 100vh;
   background-image: url(${(props) => props.url});
   background-size: cover;
-
-  @media ${device.tablet} {
-    display: block;
-    width: 60%;
-    height: 35rem;
-  }
 `;
 
 function App() {

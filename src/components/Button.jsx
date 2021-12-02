@@ -8,11 +8,13 @@ const RecipeButton = styled.button`
   transform: rotate(${(props) => props.rotation});
   width: 15.6vw;
   height: 15.5vw;
+  /*background: transparent;
+  border: none !important; */
 `;
 
-const Button = ({setUrl, position, rotation, url}) => {
+const Button = ({setUrl, position, rotation, desktopurl}) => {
   return (
-    <RecipeButton position={position} rotation={rotation} onClick={()=>{setUrl(url)}}></RecipeButton>);
+    <RecipeButton position={position} rotation={rotation} onClick={()=>{setUrl(desktopurl)}}></RecipeButton>);
 };
 
 export default Button;
