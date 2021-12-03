@@ -14,7 +14,7 @@ const MainImage = styled.div`
   background-size: cover;
 
   @media ${device.mobile} {
-    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/spectator/UT6AQWITN5DFFJLLVQDCEHXFX4.png);
+    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7Y7LS7K44RAIHPIIGG4OJIMC6U.png);
   }
 `;
 

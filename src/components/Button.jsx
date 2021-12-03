@@ -27,7 +27,7 @@ const Button = ({
     <RecipeButton
       position={position}
       rotation={rotation}
-      onClick={() => submit(history, desktopUrl)}
+      onClick={() => {if(window.innerWidth < 758) {submit(history, mobileUrl)} else submit(history, desktopUrl)}}
     ></RecipeButton>
   );
 };
