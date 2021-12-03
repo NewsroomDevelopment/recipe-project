@@ -11,6 +11,11 @@ const Image = styled.div`
   /* (853 / 1280 * 100) */
   background-image: url(${(props) => props.url});
   background-size: cover;
+
+  @media ${device.mobile} {
+    padding-top: 176%;
+    background-size: cover;
+  }
 `;
 
 const Recipe = ({ url }) => {

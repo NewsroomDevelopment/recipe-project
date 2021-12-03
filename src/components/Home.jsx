@@ -14,7 +14,10 @@ const MainImage = styled.div`
   background-size: cover;
 
   @media ${device.mobile} {
+    padding-top: 176%;
+    width: 100vw;
     background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7Y7LS7K44RAIHPIIGG4OJIMC6U.png);
+    background-size: cover;
   }
 `;
 
@@ -29,7 +32,7 @@ const Home = ({ url, setUrl }) => {
   console.log(url);
   return (
     <>
-      <MainImage />
+      <MainImage/>
       {Buttons.map((button) => (
         <Button
           submit={submit}

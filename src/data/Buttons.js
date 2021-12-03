@@ -3,7 +3,6 @@ export const Buttons = [{
     position: ["10.15vh", "18.45vw"],
     rotation: "-19deg",
     positionM: ["25.5vh", "22.8vw"],
-    rotationM: "-19deg",
     desktopUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/2V33JXKGHNCV7FTQTUSW4FCQ4E.png",
     mobileUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/A6DFHRNPRRBCVHSDLAFPYIQLEE.png"
 },
@@ -11,8 +10,7 @@ export const Buttons = [{
     name: "Exhausted",
     position: ["59.4vh", "3.4vw"],
     rotation: "14.8deg",
-    positionM: ["10.15vh", "18.45vw"],
-    rotationM: "-19deg",
+    positionM: ["36.5vh", "9.5vw"],
     desktopUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/66OHGGZMNZHJTNIH2PGRWXRJPY.png",
     mobileUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/PAQPOC7UV5EB5PPL2NS6LA4ACM.png"
 },
@@ -20,8 +18,7 @@ export const Buttons = [{
     name: "Lonely",
     position: ["39.8vh", "36.8vw"],
     rotation: "47.8deg",
-    positionM: ["10.15vh", "18.45vw"],
-    rotationM: "-19deg",
+    positionM: ["32vh", "38.4vw"],
     desktopUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/CZOU4PHWLNH4BK45IH6L6WWSKI.png",
     mobileUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/RXYYOFNS5ZG2DELLVPTYJKBW5E.png"
 },
@@ -29,8 +26,7 @@ export const Buttons = [{
     name: "Celebratory",
     position: ["32.8vh", "57.1vw"],
     rotation: "-6.2deg",
-    positionM: ["10.15vh", "18.45vw"],
-    rotationM: "-19deg",
+    positionM: ["30.5vh", "56vw"],
     desktopUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/VMDYVVEYLFDUFPJO3JKHZKQCZY.png",
     mobileUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/UT6AQWITN5DFFJLLVQDCEHXFX4.png"
 },
@@ -38,8 +34,7 @@ export const Buttons = [{
     name: "Sad",
     position: ["9.5vh", "76.6vw"],
     rotation: "-40.5deg",
-    positionM: ["10.15vh", "18.45vw"],
-    rotationM: "-19deg",
+    positionM: ["25.3vh", "73vw"],
     desktopUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7QKKDKLVM5DR7AWY6VGHYKPTYI.png",
     mobileUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/BUM4R5V4I5FYFHPIB4SDHWLWVE.png"
 },
@@ -47,8 +42,7 @@ export const Buttons = [{
     name: "Overwhelmed",
     position: ["79vh", "26.05vw"],
     rotation: "-9deg",
-    positionM: ["10.15vh", "18.45vw"],
-    rotationM: "-19deg",
+    positionM: ["40.9vh", "29vw"],
     desktopUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/PSDQS6MW3NEY5JZMROSCMAQV5M.png",
     mobileUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5EYFJEVK4JEQBM6LYA4VPF7BJQ.png"
 }
