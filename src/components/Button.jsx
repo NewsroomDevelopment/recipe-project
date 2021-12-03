@@ -2,19 +2,32 @@ import React from "react";
 import styled from "styled-components";
 
 const RecipeButton = styled.button`
-  position: absolute; 
+  position: absolute;
   top: ${(props) => props.position[0]};
   left: ${(props) => props.position[1]};
   transform: rotate(${(props) => props.rotation});
   width: 15.6vw;
   height: 15.5vw;
-  background: transparent;
-  border: none !important; 
+  border: none !important;
 `;
 
-const Button = ({setUrl, position, rotation, desktopurl}) => {
+const Button = ({
+  submit,
+  setUrl,
+  position,
+  rotation,
+  desktopUrl,
+  history,
+  mobileUrl,
+}) => {
+  console.log(desktopUrl);
   return (
-    <RecipeButton position={position} rotation={rotation} onClick={()=>{setUrl(desktopurl)}}></RecipeButton>);
+    <RecipeButton
+      position={position}
+      rotation={rotation}
+      onClick={() => submit(history, desktopUrl)}
+    ></RecipeButton>
+  );
 };
 
 export default Button;

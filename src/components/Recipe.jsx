@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { device } from '../device';
+import { device } from "../device";
+import { useHistory } from "react-router-dom";
 
 const Image = styled.div`
   width: 100vw;
@@ -15,11 +16,11 @@ const Image = styled.div`
   }
 `;
 
+const Recipe = ({ url }) => {
+  let history = useHistory();
 
-const Recipe = ({url}) => {
-  return (
-    <Image src={url}></Image>
-  );
-}
+  if (url == null) history.push("/");
+  return <Image url={url}></Image>;
+};
 
 export default Recipe;
