@@ -40,6 +40,8 @@ const Home = ({ url, setUrl }) => {
           rotation={button.rotation}
           desktopUrl={button.desktopUrl}
           mobileUrl={button.mobileUrl}
+          positionM={button.positionM}
+          rotationM={button.rotationM}
         />
       ))}
     </>

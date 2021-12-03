@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../device";
+
 
 const RecipeButton = styled.button`
   position: absolute;
@@ -10,7 +12,15 @@ const RecipeButton = styled.button`
   height: 15.5vw;
   cursor: pointer;
   background: transparent;
-  border: none !important;
+  border: none !important; 
+  @media ${device.mobile} {
+    top: ${(props) => props.positionM[0]};
+    left: ${(props) => props.positionM[1]};
+    transform: rotate(${(props) => props.rotationM});
+    background: black;
+    width: 13.6vw;
+    height: 13.5vw;
+  }
 `;
 
 const Button = ({
@@ -21,13 +31,17 @@ const Button = ({
   desktopUrl,
   history,
   mobileUrl,
+  positionM,
+  rotationM,
 }) => {
   console.log(desktopUrl);
   return (
     <RecipeButton
       position={position}
       rotation={rotation}
-      onClick={() => {if(window.innerWidth < 758) {submit(history, mobileUrl)} else submit(history, desktopUrl)}}
+      positionM={positionM}
+      rotation={rotationM}
+      onClick={() => { if (window.innerWidth < 758) { submit(history, mobileUrl) } else submit(history, desktopUrl) }}
     ></RecipeButton>
   );
 };
