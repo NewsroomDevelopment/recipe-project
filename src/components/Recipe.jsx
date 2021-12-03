@@ -5,7 +5,10 @@ import { useHistory } from "react-router-dom";
 
 const Image = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 0;
+
+  padding-top: 66.64%; /* (img-height / img-width * container-width) */
+  /* (853 / 1280 * 100) */
   background-image: url(${(props) => props.url});
   background-size: cover;
 
