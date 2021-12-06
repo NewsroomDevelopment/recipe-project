@@ -5,12 +5,11 @@ import { useHistory } from "react-router-dom";
 
 const Image = styled.div`
   width: 100vw;
-  height: 0;
-
-  padding-top: 66.64%; /* (img-height / img-width * container-width) */
+  height: 63vw;
   /* (853 / 1280 * 100) */
   background-image: url(${(props) => props.url});
   background-size: cover;
+  background-repeat: no-repeat;
 
   @media ${device.mobile} {
     padding-top: 176%;

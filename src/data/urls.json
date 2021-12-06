@@ -1,6 +1,6 @@
 {
   "desktop": {
-    "sad":"https://cloudfront-us-east-1.images.arcpublishing.com/spectator/MNI36JYE2JEE7NE5JASDAAP6OM.png",
+    "sad": "../images/sad-biscuit.png",
     "lonely": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/HZRHV4JZ7NFPFBSBVEY2GICCLY.png",
     "overwhelmed": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/IBHY6M5FYZEK7KJD4ZFYJAZKZM.png",
     "food-for-thought": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/AP2JXVRR7BDEDMXDYCNGWDX3M4.png",
