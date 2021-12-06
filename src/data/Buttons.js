@@ -12,8 +12,8 @@ export const Buttons = [
     position: ["33.4vw", "3.4vw"],
     rotation: "14.8deg",
     positionM: ["36.5vh", "9.5vw"],
-    desktopUrl: "../images/celebratory-cheese.png",
-    mobileUrl: "../images/celebratory-cheese-mobile.png",
+    desktopUrl: "../images/exhausted-citrus.png",
+    mobileUrl: "../images/exhausted-citrus-mobile.png",
   },
   {
     name: "Lonely",
