@@ -23,13 +23,12 @@ const MainImage = styled.div`
 
 const Home = ({ url, setUrl }) => {
   let history = useHistory();
-  console.log(url);
+
   const submit = (history, url) => {
     setUrl(url);
-    console.log(history);
     history.push("/recipe");
   };
-  console.log(url);
+
   return (
     <>
       <MainImage/>
