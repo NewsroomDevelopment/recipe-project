@@ -4,6 +4,7 @@ import { device } from "../device";
 import Button from "./Button";
 import { useHistory } from "react-router-dom";
 import { Buttons } from "../data/Buttons";
+import Popup from './Popup';
 
 const MainImage = styled.div`
   width: 100vw;
@@ -27,8 +28,11 @@ const Home = ({ url, setUrl }) => {
     history.push("/recipe");
   };
 
+  const [show, setShow] = useState(true);
+
   return (
     <>
+      <Popup show={show} setShow={setShow} />
       <MainImage />
       {Buttons.map((button) => (
         <Button

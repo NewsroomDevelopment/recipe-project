@@ -23,7 +23,7 @@ const RecipeButton = styled.button`
   }
 `;
 
-const Button = ({
+const Button2 = ({
   submit,
   setUrl,
   position,
@@ -46,4 +46,4 @@ const Button = ({
   );
 };
 
-export default Button;
+export default Button2;
