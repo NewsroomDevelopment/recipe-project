@@ -13,20 +13,9 @@ const AppWrapper = () => {
     </Router>
   );
 };
-const cacheImages = async (urls) => {
-  const promises = await urls.map((src) => {
-    return new Promise((resolve) => {
-      const img = new Image();
-      img.src = src;
-      img.onload = resolve();
-    });
-  });
-  await Promise.all(promises);
-};
 
 function App() {
-  const [url, setUrl] = useState(null);
-
+  const [url, setUrl] = useState(null);  
   // useEffect(() => {
   //   const urls = [
   //     "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/MNI36JYE2JEE7NE5JASDAAP6OM.png",
