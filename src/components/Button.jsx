@@ -34,7 +34,7 @@ const Button = ({
   positionM,
   rotationM,
 }) => {
-  console.log(desktopUrl);
+
   return (
     <RecipeButton
       position={position}

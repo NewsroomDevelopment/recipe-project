@@ -1,49 +1,50 @@
-export const Buttons = [{
+export const Buttons = [
+  {
     name: "Irritated",
-    position: ["10.15vh", "18.45vw"],
+    position: ["6.15vw", "18.45vw"],
     rotation: "-19deg",
     positionM: ["25.5vh", "22.8vw"],
-    desktopUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/2V33JXKGHNCV7FTQTUSW4FCQ4E.png",
-    mobileUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/A6DFHRNPRRBCVHSDLAFPYIQLEE.png"
-},
-{
+    desktopUrl: "../images/irritated-cookies.png",
+    mobileUrl: "../images/irritated-cookies-mobile.png",
+  },
+  {
     name: "Exhausted",
-    position: ["59.4vh", "3.4vw"],
+    position: ["33.4vw", "3.4vw"],
     rotation: "14.8deg",
     positionM: ["36.5vh", "9.5vw"],
-    desktopUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/66OHGGZMNZHJTNIH2PGRWXRJPY.png",
-    mobileUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/PAQPOC7UV5EB5PPL2NS6LA4ACM.png"
-},
-{
+    desktopUrl: "../images/exhausted-citrus.png",
+    mobileUrl: "../images/exhausted-citrus-mobile.png",
+  },
+  {
     name: "Lonely",
-    position: ["39.8vh", "36.8vw"],
+    position: ["22.8vw", "36.8vw"],
     rotation: "47.8deg",
     positionM: ["32vh", "38.4vw"],
-    desktopUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/CZOU4PHWLNH4BK45IH6L6WWSKI.png",
-    mobileUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/RXYYOFNS5ZG2DELLVPTYJKBW5E.png"
-},
-{
+    desktopUrl: "../images/lonely-shortbread.png",
+    mobileUrl: "../images/lonely-shortbread-mobile.png",
+  },
+  {
     name: "Celebratory",
-    position: ["32.8vh", "57.1vw"],
+    position: ["18.8vw", "57.1vw"],
     rotation: "-6.2deg",
     positionM: ["30.5vh", "56vw"],
-    desktopUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/VMDYVVEYLFDUFPJO3JKHZKQCZY.png",
-    mobileUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/UT6AQWITN5DFFJLLVQDCEHXFX4.png"
-},
-{
+    desktopUrl: "../images/celebratory-cheese.png",
+    mobileUrl: "../images/celebratory-cheese-mobile.png",
+  },
+  {
     name: "Sad",
-    position: ["9.5vh", "76.6vw"],
+    position: ["5.5vw", "76.6vw"],
     rotation: "-40.5deg",
     positionM: ["25.3vh", "73vw"],
-    desktopUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7QKKDKLVM5DR7AWY6VGHYKPTYI.png",
-    mobileUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/BUM4R5V4I5FYFHPIB4SDHWLWVE.png"
-},
-{
+    desktopUrl: "../images/sad-biscuit.png",
+    mobileUrl: "../images/sad-biscuit-mobile.png",
+  },
+  {
     name: "Overwhelmed",
-    position: ["79vh", "26.05vw"],
+    position: ["45vw", "26.05vw"],
     rotation: "-9deg",
     positionM: ["40.9vh", "29vw"],
-    desktopUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/PSDQS6MW3NEY5JZMROSCMAQV5M.png",
-    mobileUrl: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5EYFJEVK4JEQBM6LYA4VPF7BJQ.png"
-}
+    desktopUrl: "../images/overwhelmed-peach.png",
+    mobileUrl: "../images/overwhelmed-peach-mobile.png",
+  },
 ];

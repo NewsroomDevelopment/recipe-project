@@ -7,32 +7,29 @@ import { Buttons } from "../data/Buttons";
 
 const MainImage = styled.div`
   width: 100vw;
-  height: 0;
-  padding-top: 66.64%; /* (img-height / img-width * container-width) */
-  /* (853 / 1280 * 100) */
-  background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/spectator/EYNMNBNHTBEHHCGGH65JFXMOD4.png);
+  height: 63vw;
+  background-image: url("/images/main.png");
   background-size: cover;
+  background-repeat: no-repeat;
 
   @media ${device.mobile} {
     padding-top: 176%;
     width: 100vw;
-    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/spectator/7Y7LS7K44RAIHPIIGG4OJIMC6U.png);
+    background-image: url("/images/main-mobile.png");
     background-size: cover;
-  }
+  } ;
 `;
 
 const Home = ({ url, setUrl }) => {
   let history = useHistory();
-  console.log(url);
   const submit = (history, url) => {
     setUrl(url);
-    console.log(history);
     history.push("/recipe");
   };
-  console.log(url);
+
   return (
     <>
-      <MainImage/>
+      <MainImage />
       {Buttons.map((button) => (
         <Button
           submit={submit}
