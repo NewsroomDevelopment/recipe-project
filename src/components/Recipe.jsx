@@ -10,10 +10,13 @@ const Image = styled.div`
   background-image: url(${(props) => props.url});
   background-size: cover;
   background-repeat: no-repeat;
-
+  overflow-y: hidden;
   @media ${device.mobile} {
-    padding-top: 176%;
     background-size: cover;
+    background-repeat: no-repeat;
+    width: 120%;
+    height: 120vh;
+    background-position: center;
   }
 `;
 

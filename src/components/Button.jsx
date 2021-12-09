@@ -18,8 +18,8 @@ const RecipeButton = styled.button`
     left: ${(props) => props.positionM[1]};
     transform: rotate(${(props) => props.rotation});
     background: transparent;
-    width: 13.6vw;
-    height: 13.5vw;
+    width: 7.6vh;
+    height: 7.5vh;
   }
 `;
 

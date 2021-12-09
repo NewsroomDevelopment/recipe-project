@@ -13,10 +13,11 @@ const MainImage = styled.div`
   background-repeat: no-repeat;
 
   @media ${device.mobile} {
-    padding-top: 176%;
-    width: 100vw;
+    width: 450px;
+    height:100vh;
     background-image: url("/images/main-mobile.png");
     background-size: cover;
+    background-position:center;
   } ;
 `;
 
